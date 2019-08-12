@@ -1,0 +1,22 @@
+The Kubedex Helm-Controller is now installed.
+
+To install and manage charts apply a CRD to the namespace where the Helm-Controller is running.
+
+For example to install the kubernetes-dashboard chart apply this CRD.
+
+cat <<EOF | kubectl apply -n helm-controller -f -
+apiVersion: helm.kubedex.com/v1
+kind: HelmChart
+metadata:
+  name: kubernetes-dashboard
+  namespace: helm-controller
+spec:
+  chart: kubernetes-dashboard
+  version: 1.8.0
+  repo: stable
+  targetNamespace: dashboard
+  valuesContent: |-
+    rbac.clusterAdminRole: true
+    enableInsecureLogin: true
+    enableSkipLogin: value: true
+EOF

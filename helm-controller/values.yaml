@@ -1,0 +1,21 @@
+replicaCount: 1
+
+operator_image:
+  repository: kubedex/helm-controller
+  tag: v1.0.1
+  pullPolicy: IfNotPresent
+
+job_image:
+  repository: kubedex/helm-controller-jobimage
+  tag: v1.0.0
+
+nameOverride: ""
+fullnameOverride: ""
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

@@ -1,25 +1,13 @@
 apiVersion: v1
 entries:
-  kubedex-exporter:
-  - appVersion: 0.0.2
-    created: 2018-09-17T13:33:31.603695786+07:00
-    description: Deploy a kubedex-exporter pod
-    digest: ce0f763399fa41383ea646762a53a25b143899bc8592aa281376ba5f64054735
-    home: https://kubedex.com
-    name: kubedex-exporter
-    sources:
-    - https://github.com/kubedex/exporter
+  helm-controller:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-08-12T16:49:09.819696+07:00
+    description: An Operator that installs Helm Charts
+    digest: 0a30cfd74646a43076b5d85c4712f8b5c26b439315da4ad960b68835acae7600
+    name: helm-controller
     urls:
-    - https://kubedex.github.io/charts/kubedex-exporter-0.0.2.tgz
-    version: 0.0.2
-  - created: 2018-09-17T13:33:31.603506685+07:00
-    description: Deploy a kubedex-exporter pod
-    digest: e010e00b2b40015e7066f104192a569529683e8db2831ba4451093e7953f70c3
-    home: https://kubedex.com
-    name: kubedex-exporter
-    sources:
-    - https://github.com/kubedex/exporter
-    urls:
-    - https://kubedex.github.io/charts/kubedex-exporter-0.0.1.tgz
-    version: 0.0.1
-generated: 2018-09-17T13:33:31.600589036+07:00
+    - https://kubedex.github.io/charts/helm-controller-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-08-12T16:49:09.818932+07:00
