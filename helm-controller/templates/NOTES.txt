@@ -18,5 +18,5 @@ spec:
   valuesContent: |-
     rbac.clusterAdminRole: true
     enableInsecureLogin: true
-    enableSkipLogin: value: true
+    enableSkipLogin: true
 EOF
