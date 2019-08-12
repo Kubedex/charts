@@ -3,11 +3,20 @@ entries:
   helm-controller:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-08-12T16:49:09.819696+07:00
+    created: 2019-08-12T17:00:22.783183+07:00
+    description: An Operator that installs Helm Charts
+    digest: b8a89f4f0c78180a9d9e2d0282edabec630749741142128efac0809e368e4b95
+    name: helm-controller
+    urls:
+    - https://kubedex.github.io/charts/helm-controller-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-08-12T17:00:22.781851+07:00
     description: An Operator that installs Helm Charts
     digest: 0a30cfd74646a43076b5d85c4712f8b5c26b439315da4ad960b68835acae7600
     name: helm-controller
     urls:
     - https://kubedex.github.io/charts/helm-controller-0.1.0.tgz
     version: 0.1.0
-generated: 2019-08-12T16:49:09.818932+07:00
+generated: 2019-08-12T17:00:22.78071+07:00
